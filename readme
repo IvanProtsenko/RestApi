@@ -1,7 +1,13 @@
-```npm i```
+```
+npm i
+```
 
 для запуска
-```npm run start```
+```
+npm run start
+```
 
 для запуска с отслеживанием
-```npm run start:dev```
+```
+npm run start:dev
+```
