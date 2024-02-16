@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Users } from '../users/models/user.entity';
 import dotenv from 'dotenv';
+import { Movies } from 'src/movies/models/movie.entity';
 
 dotenv.config();
 
@@ -14,7 +15,7 @@ dotenv.config();
       username: process.env.DATABASE_USER,
       password: process.env.DATABASE_PASS,
       database: 'kinopoisk',
-      entities: [Users],
+      entities: [Users, Movies],
       synchronize: true,
     }),
   ],
